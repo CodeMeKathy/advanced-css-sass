@@ -66,7 +66,7 @@ img.logo {
   position: absolute;
   top: 40%;
   left: 50%;
-  background-color: #AD7A99;
+  /* background-color: #AD7A99; */
 	transform: translate(-50%, -50%);
 
 }
@@ -98,7 +98,7 @@ img.logo {
 }
 .heading-title-secondary {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
 	letter-spacing: 15px;
 	animation: rightSlideIn 1s ease-out;
