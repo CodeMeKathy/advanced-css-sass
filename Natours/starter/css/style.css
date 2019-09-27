@@ -47,7 +47,7 @@ body {
 		url(../img/hero.jpg);
 	background-size: cover;
 	background-position: top;
-	clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
 	/* clip-path: polygon(0 0, 0% 0, 100% 50%, 0 100%) */
 }
 
@@ -65,24 +65,71 @@ img.logo {
   top: 40%;
   left: 50%;
   background-color: #AD7A99;
-  transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
-
+/* Title Box */
 .heading-title {
   color: white;
   text-transform: uppercase;
-  text-align: center;
+
 }
 .heading-title-primary {
+
   display: block;
   font-size: 4.5rem;
   font-weight: 400;
-  letter-spacing: 25px;
+	letter-spacing: 25px;
+	animation-name: leftSlideIn;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	backface-visibility: hidden;
+	/* 
+	Use	`backface-visibility: hidden` to prevent additonal shaking or movement at end of element.
+
+	Animation Options
+	animation-delay: 3s;
+	animation-iteration-count: 3;
+
+	*/
 }
 .heading-title-secondary {
   display: block;
   font-size: 1.5rem;
   font-weight: 400;
-  letter-spacing: 15px;
+	letter-spacing: 15px;
+	animation: rightSlideIn 1s ease-out;
+}
+
+/* Title Animation */
+
+@keyframes leftSlideIn {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px)
+	}
+	80% {
+		transform: translateX(10px)
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+
+@keyframes rightSlideIn {
+  0% {
+	 opacity: 0;
+	 transform: translateX(100px)
+ }
+  80% {
+
+	 transform: translateX(-10px)
+ } 
+  100% {
+	 opacity: 1;
+	 transform: translate(0)
+ }
+
 }
