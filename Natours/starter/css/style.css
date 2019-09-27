@@ -60,16 +60,18 @@ body {
 img.logo {
 	height: 35px ;
 }
+
+/* Title Box */
 .title-box {
   position: absolute;
   top: 40%;
   left: 50%;
   background-color: #AD7A99;
 	transform: translate(-50%, -50%);
-	text-align: center;
+
 }
 
-/* Title Box */
+
 .heading-title {
   color: white;
   text-transform: uppercase;
