@@ -44,7 +44,7 @@ body {
 			rgba(92, 172, 196, 0.8),
 			rgba(152, 210, 235, 0.8)
 		),
-		url(../img/hero.jpg);
+		url(../img/hero2.jpg);
 	background-size: cover;
 	background-position: top;
 	clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
@@ -58,7 +58,7 @@ body {
 }
 
 img.logo {
-	height: 35px;
+	height: 75px;
 }
 
 /* Title Box */
