@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Lambert's Orchard Company Website",
   "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
   "repository": "https://github.com/CodeMeKathy/Advanced-CSS-Sass.git",
   "author": "Kathy * <Kathy@KathyLambert.me>",
   "license": "MIT",
