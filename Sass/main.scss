@@ -1,7 +1,5 @@
 /*
-Natours File
-
-New Palette: 
+Color New Palette: 
 
 #98D2EB
 #B38D97
@@ -10,8 +8,12 @@ New Palette:
 #5CACC4
 #AD7A99
 #5C2751
-
 */
+
+$color-primary: #AD7A99;
+$color-secondary: #5c2751;
+$color-primary-font: #fff;
+$color-primary-background: #8E9AAF;
 
 /* Browser Reset */
 
@@ -31,11 +33,11 @@ html {
 /* Overall Styling */
 body {
 	font-family: 'Lato', sans-serif;
-	background-color: #8e9aaf;
+	background-color: $color-primary-background;
 	font-weight: 400;
 	line-height: 1.7;
 	/* font-size: 1rem ; */
-	color: #5c2751;
+	color: $color-secondary;
   padding: 1.9rem;
   box-sizing: border-box;
 }
@@ -154,8 +156,8 @@ img.logo {
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
 }
 .btn-white {
-	background-color: #ad7a99;
-	color: #fff;
+	background-color: $color-primary;
+	color: $color-primary-font;
 	font-size: 1.6rem;
 }
 .btn::after {
@@ -172,7 +174,7 @@ img.logo {
 	transition: all 0.4s;
 }
 .btn-white::after {
-	background-color: #ad7a99;
+	background-color: $color-primary;
 }
 
 .btn:hover::after {
