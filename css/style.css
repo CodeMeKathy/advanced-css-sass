@@ -1,5 +1,5 @@
 /*
-Color New Palette: 
+Color Palette: 
 
 #98D2EB
 #B38D97
@@ -109,8 +109,7 @@ img.logo {
     opacity: 1;
     transform: translate(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
@@ -128,11 +127,6 @@ img.logo {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn-white {
-  background-color: #AD7A99;
-  color: #fff;
-  font-size: 1.6rem; }
-
 .btn::after {
   content: '';
   display: inline-block;
@@ -146,12 +140,17 @@ img.logo {
   z-index: -1;
   transition: all 0.4s; }
 
-.btn-white::after {
-  background-color: #AD7A99; }
-
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
+
+.btn-primary {
+  background-color: #AD7A99;
+  color: #fff;
+  font-size: 1.6rem; }
+
+.btn-primary::after {
+  background-color: #AD7A99; }
 
 .btn-animated {
   animation: btnMoveUp 2s ease-out 0.75s;

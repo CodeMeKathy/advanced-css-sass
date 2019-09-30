@@ -1,5 +1,5 @@
 /*
-Color New Palette: 
+Color Palette: 
 
 #98D2EB
 #B38D97
@@ -14,6 +14,9 @@ $color-primary: #AD7A99;
 $color-secondary: #5c2751;
 $color-primary-font: #fff;
 $color-primary-background: #8E9AAF;
+$color-btn-box-shadow: #000;
+$color-pop-bright: #98D2EB;
+$color-pop-medium: #5CACC4;
 
 /* Browser Reset */
 
@@ -47,8 +50,9 @@ body {
 	height: 95vh;
 	background-image: linear-gradient(
 			to right bottom,
-			rgba(92, 172, 196, 0.8),
-			rgba(152, 210, 235, 0.8)
+			rgba($color-pop-medium, 0.8),
+      rgba($color-pop-bright, 0.8),
+      
 		),
 		url(../img/hero2.jpg);
 	background-size: cover;
@@ -60,7 +64,7 @@ body {
 .logo {
 	position: absolute;
 	top: 5rem;
-	left: 5rem;
+  left: 5rem;
 }
 
 img.logo {
@@ -136,55 +140,55 @@ img.logo {
 	}
 }
 
-.btn:link,
-.btn:visited {
-	text-transform: uppercase;
-	text-decoration: none;
-	display: inline-block;
-	padding: 1rem;
-	border-radius: 10rem;
-	position: relative;
-	transition: all 0.2s;
-	/* Transtiion needs to be on intial state */
-}
-.btn:hover {
-	transform: translateY(-0.3rem);
-	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-}
-.btn:active {
-	transform: translateY(-0.1rem);
-	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
-}
-.btn-white {
-	background-color: $color-primary;
-	color: $color-primary-font;
-	font-size: 1.6rem;
-}
-.btn::after {
-	content: '';
-	display: inline-block;
-	/* The content proptery, even if blank or empty, is required with the display property or the ::after element will not appear */
-	width: 100%;
-	height: 100%;
-	border-radius: 10rem;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	transition: all 0.4s;
-}
-.btn-white::after {
-	background-color: $color-primary;
-}
-
-.btn:hover::after {
-	transform: scaleX(1.4) scaleY(1.6);
-	opacity: 0;
-}
-
-.btn-animated {
-	animation: btnMoveUp 2s ease-out 0.75s;
-	animation-fill-mode: backwards;
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 10rem;
+    position: relative;
+    transition: all 0.2s;
+    /* Transtiion needs to be on intial state */
+  }
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-btn-box-shadow, .2);
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-btn-box-shadow, .2);
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    /* The content proptery, even if blank or empty, is required with the display property or the ::after element will not appear */
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  &-primary {
+    background-color: $color-primary;
+    color: $color-primary-font;
+    font-size: 1.6rem;
+  }
+  &-primary::after {
+    background-color: $color-primary;
+  }
+  &-animated {
+    animation: btnMoveUp 2s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
 }
 
 /* Button Animation */
