@@ -1,91 +1,4 @@
-/*
-Color Palette: 
-
-#98D2EB
-#B38D97
-#B1C1C0
-#8E9AAF
-#5CACC4
-#AD7A99
-#5C2751
-*/
-/* Browser Reset */
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-  /* Removes default behavior that allows the border and padding to be added to the total width and height of the element. */ }
-
-html {
-  /* Default browser font-size is 16px. Converting to 1rem or 10px by taking a the percentage. */
-  font-size: 62.5%; }
-
-/* Overall Styling */
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: #8E9AAF;
-  font-weight: 400;
-  line-height: 1.7;
-  /* font-size: 1rem ; */
-  color: #5c2751;
-  padding: 1.9rem;
-  box-sizing: border-box; }
-
-/* Header */
-.logo {
-  position: absolute;
-  top: 5rem;
-  left: 5rem; }
-
-img.logo {
-  height: 7.5rem; }
-
-/* Title Box */
-.title-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(92, 172, 196, 0.8), rgba(152, 210, 235, 0.8)), url(../img/hero2.jpg);
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
-  /* clip-path: polygon(0 0, 0% 0, 100% 50%, 0 100%) */ }
-  .header-title {
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 3rem; }
-  .header-title-primary {
-    display: block;
-    font-size: 4.5rem;
-    font-weight: 400;
-    letter-spacing: 2.5rem;
-    animation-name: leftSlideIn;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    backface-visibility: hidden;
-    /* 
-	Use	`backface-visibility: hidden` to prevent additonal shaking or movement at end of element.
-
-	Animation Options
-	animation-delay: 3s;
-	animation-iteration-count: 3;
-
-	*/ }
-  .header-title-secondary {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 1.75rem;
-    animation: rightSlideIn 1s ease-out; }
-
-/* Title Animation */
+/* Title Header Animation */
 @keyframes leftSlideIn {
   0% {
     opacity: 0;
@@ -105,6 +18,28 @@ img.logo {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+/* Button Animation */
+@keyframes btnMoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/* Browser Reset */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* Removes default behavior that allows the border and padding to be added to the total width and height of the element. */ }
+
+html {
+  /* Default browser font-size is 16px. Converting to 1rem or 10px by taking a the percentage. */
+  font-size: 62.5%; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -153,11 +88,74 @@ img.logo {
   animation: btnMoveUp 2s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
-/* Button Animation */
-@keyframes btnMoveUp {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+/* Header */
+.logo {
+  position: absolute;
+  top: 5rem;
+  left: 5rem; }
+
+img.logo {
+  height: 7.5rem; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(92, 172, 196, 0.8), rgba(152, 210, 235, 0.8)), url(../img/hero2.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+  /* clip-path: polygon(0 0, 0% 0, 100% 50%, 0 100%) */ }
+  .header-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header-title {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+  .header-title-primary {
+    display: block;
+    font-size: 4.5rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+    animation-name: leftSlideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    backface-visibility: hidden;
+    /* 
+	Use	`backface-visibility: hidden` to prevent additonal shaking or movement at end of element.
+
+	Animation Options
+	animation-delay: 3s;
+	animation-iteration-count: 3;
+
+	*/ }
+  .header-title-secondary {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1.75rem;
+    animation: rightSlideIn 1s ease-out; }
+
+/*
+Color Palette: 
+
+#98D2EB
+#B38D97
+#B1C1C0
+#8E9AAF
+#5CACC4
+#AD7A99
+#5C2751
+*/
+/* Overall Styling */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #8E9AAF;
+  font-weight: 400;
+  line-height: 1.7;
+  /* font-size: 1rem ; */
+  color: #5c2751;
+  padding: 1.9rem;
+  box-sizing: border-box; }

@@ -1,0 +1,15 @@
+/* Browser Reset */
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit; /* Removes default behavior that allows the border and padding to be added to the total width and height of the element. */
+}
+
+html {
+	/* Default browser font-size is 16px. Converting to 1rem or 10px by taking a the percentage. */
+	// This defines 1rem.
+	font-size: 62.5%; 
+
+}

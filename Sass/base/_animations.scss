@@ -1,0 +1,40 @@
+/* Title Header Animation */
+@keyframes leftSlideIn {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem);
+	}
+	80% {
+		transform: translateX(1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes rightSlideIn {
+	0% {
+		opacity: 0;
+		transform: translateX(10rem);
+	}
+	80% {
+		transform: translateX(-1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+/* Button Animation */
+@keyframes btnMoveUp {
+	0% {
+		opacity: 0;
+		transform: translateY(5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}

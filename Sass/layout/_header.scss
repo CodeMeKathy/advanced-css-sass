@@ -1,0 +1,61 @@
+/* Header */
+.logo {
+	position: absolute;
+	top: 5rem;
+  left: 5rem;
+}
+
+img.logo {
+	height: 7.5rem;
+}
+.header {
+	height: 95vh;
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-pop-medium, 0.8),
+      rgba($color-pop-bright, 0.8),
+      
+		),
+		url(../img/hero2.jpg);
+	background-size: cover;
+	background-position: top;
+	clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+	/* clip-path: polygon(0 0, 0% 0, 100% 50%, 0 100%) */
+  &-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  &-title {
+	color: $color-primary-font;
+	text-transform: uppercase;
+	margin-bottom: 3rem;
+  }
+  &-title-primary {
+	display: block;
+	font-size: 4.5rem;
+	font-weight: 400;
+	letter-spacing: 2.5rem;
+	animation-name: leftSlideIn;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	backface-visibility: hidden;
+	/* 
+	Use	`backface-visibility: hidden` to prevent additonal shaking or movement at end of element.
+
+	Animation Options
+	animation-delay: 3s;
+	animation-iteration-count: 3;
+
+	*/
+  }
+  &-title-secondary {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 1.75rem;
+	animation: rightSlideIn 1s ease-out;
+  }
+}
