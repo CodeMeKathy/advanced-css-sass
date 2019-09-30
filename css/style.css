@@ -34,14 +34,6 @@ body {
   box-sizing: border-box; }
 
 /* Header */
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(92, 172, 196, 0.8), rgba(152, 210, 235, 0.8)), url(../img/hero2.jpg);
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
-  /* clip-path: polygon(0 0, 0% 0, 100% 50%, 0 100%) */ }
-
 .logo {
   position: absolute;
   top: 5rem;
@@ -58,21 +50,27 @@ img.logo {
   transform: translate(-50%, -50%);
   text-align: center; }
 
-.heading-title {
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 3rem; }
-
-.heading-title-primary {
-  display: block;
-  font-size: 4.5rem;
-  font-weight: 400;
-  letter-spacing: 2.5rem;
-  animation-name: leftSlideIn;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  backface-visibility: hidden;
-  /* 
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(92, 172, 196, 0.8), rgba(152, 210, 235, 0.8)), url(../img/hero2.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+  /* clip-path: polygon(0 0, 0% 0, 100% 50%, 0 100%) */ }
+  .header-title {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+  .header-title-primary {
+    display: block;
+    font-size: 4.5rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+    animation-name: leftSlideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    backface-visibility: hidden;
+    /* 
 	Use	`backface-visibility: hidden` to prevent additonal shaking or movement at end of element.
 
 	Animation Options
@@ -80,13 +78,12 @@ img.logo {
 	animation-iteration-count: 3;
 
 	*/ }
-
-.heading-title-secondary {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: 1.75rem;
-  animation: rightSlideIn 1s ease-out; }
+  .header-title-secondary {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1.75rem;
+    animation: rightSlideIn 1s ease-out; }
 
 /* Title Animation */
 @keyframes leftSlideIn {
