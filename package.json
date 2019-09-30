@@ -1,0 +1,13 @@
+{
+  "name": "Lamberts-Orchard",
+  "version": "0.0.1",
+  "description": "Lambert's Orchard Company Website",
+  "main": "index.js",
+  "repository": "https://github.com/CodeMeKathy/Advanced-CSS-Sass.git",
+  "author": "Kathy * <Kathy@KathyLambert.me>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
