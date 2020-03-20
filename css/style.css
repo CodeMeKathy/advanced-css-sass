@@ -77,12 +77,12 @@ html {
   opacity: 0; }
 
 .btn-primary {
-  background-color: #AD7A99;
+  background-color: #ad7a99;
   color: #fff;
   font-size: 1.6rem; }
 
 .btn-primary::after {
-  background-color: #AD7A99; }
+  background-color: #ad7a99; }
 
 .btn-animated {
   animation: btnMoveUp 2s ease-out 0.75s;
@@ -138,6 +138,25 @@ img.logo {
     letter-spacing: 1.75rem;
     animation: rightSlideIn 1s ease-out; }
 
+.row {
+  max-width: 114rem;
+  background-color: white;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 8rem) / 2);
+    background-color: #000;
+    float: left; }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-3 {
+    width: calc((100% - 8rem) / 3);
+    background-color: #9e2c2c;
+    float: left; }
+    .row .col-1-of-3:not(:last-child) {
+      margin-right: 6rem; }
+
 /*
 Color Palette: 
 
@@ -152,7 +171,7 @@ Color Palette:
 /* Overall Styling */
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #8E9AAF;
+  background-color: #8e9aaf;
   font-weight: 400;
   line-height: 1.7;
   /* font-size: 1rem ; */
