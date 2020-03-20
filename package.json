@@ -1,5 +1,5 @@
 {
-  "name": "Lamberts-Orchard",
+  "name": "LambertsI-Orchard",
   "version": "0.0.1",
   "description": "Lambert's Orchard Company Website",
   "main": "index.js",
@@ -11,6 +11,6 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }

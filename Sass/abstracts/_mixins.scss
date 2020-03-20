@@ -1,0 +1,7 @@
+@mixin clearfix {
+  &::after {
+    content: ""; // To append the sudo element to the DOM. An empty string equates to an empty sudeo element
+    display: table;
+    clear: both; // Clears both float left and right
+  }
+}
