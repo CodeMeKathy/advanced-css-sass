@@ -56,7 +56,7 @@
 - 32 - Implementing the 7-1 CSS Architecture with Sass (17:34 mins)
 - 33 - Review Basic Principles of Responsive Design and Layout Types (04:38 mins) ✅
 - 34 - Building a Custom Grid with Float (37:04 mins) ✅
-- 35 - Building the About Section - Part 1 (0:00 mins)
+- 35 - Building the About Section - Part 1 (0:00 mins) ✅
 - 36 - Building the About Section - Part 2 (0:00 mins)
 - 37 - Building the About Section - Part 3 (0:00 mins)
 - 38 - Building the Features Section (0:00 mins)
