@@ -1,41 +1,20 @@
+// Abstracts
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
-
+// Bases
 @import 'base/animations';
 @import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
+// Components
 @import 'components/button';
 
+// Layouts
 @import 'layout/header';
 @import 'layout/_grid';
 
+// Pages
 @import 'pages/home';
-
-
-/*
-Color Palette: 
-
-#98D2EB
-#B38D97
-#B1C1C0
-#8E9AAF
-#5CACC4
-#AD7A99
-#5C2751
-*/
-
-/* Overall Styling */
-body {
-	font-family: 'Lato', sans-serif;
-	background-color: $color-primary-background;
-	font-weight: 400;
-	line-height: 1.7;
-	/* font-size: 1rem ; */
-	color: $color-secondary;
-  padding: 1.9rem;
-  box-sizing: border-box;
-}
-
-
 
