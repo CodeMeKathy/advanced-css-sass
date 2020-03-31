@@ -25,9 +25,11 @@
     &:hover {
       outline: 1.2rem solid $color-pop-bright;
       box-shadow: 0 2.5rem 4rem rgba($color-btn-box-shadow, .5);
-      transform: scale(1.05);
+      transform: scale(1.05) translateY(-0.5rem);
       z-index: 20;
     }
   }
-
+  &:hover &-photo:not(:hover) {
+    transform: scale(.95);
+  }
 }

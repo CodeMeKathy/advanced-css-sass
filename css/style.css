@@ -197,8 +197,10 @@ body {
     .image-comp-photo:hover {
       outline: 1.2rem solid #98d2eb;
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      transform: scale(1.05);
+      transform: scale(1.05) translateY(-0.5rem);
       z-index: 20; }
+  .image-comp:hover .image-comp-photo:not(:hover) {
+    transform: scale(0.95); }
 
 /* Header */
 .logo {
