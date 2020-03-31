@@ -58,7 +58,7 @@
 - 34 - Building a Custom Grid with Float (37:04 mins) ✅
 - 35 - Building the About Section - Part 1 (23:26 mins) ✅
 - 36 - Building the About Section - Part 2 (21:52 mins) ✅
-- 37 - Building the About Section - Part 3 (17:31 mins)
+- 37 - Building the About Section - Part 3 (17:31 mins) ✅
 - 38 - Building the Features Section (30:20 mins)
 - 39 - Building the Tours Section - Part 1 (25:29 mins)
 - 40 - Building the Tours Section - Part 2 (31:00 mins)
