@@ -175,6 +175,31 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(92, 39, 81, 0.15);
   transform: translateY(0); }
 
+.image-comp {
+  position: relative; }
+  .image-comp-photo {
+    width: 60%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 1.5rem; }
+    .image-comp-photo-p1 {
+      left: 0;
+      top: -1rem; }
+    .image-comp-photo-p2 {
+      right: 0;
+      top: 3rem; }
+    .image-comp-photo-p3 {
+      left: 20%;
+      top: 10rem; }
+    .image-comp-photo:hover {
+      outline: 1.2rem solid #98d2eb;
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      transform: scale(1.05);
+      z-index: 20; }
+
 /* Header */
 .logo {
   position: absolute;
