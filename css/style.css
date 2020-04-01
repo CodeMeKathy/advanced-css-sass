@@ -202,6 +202,20 @@ body {
   .image-comp:hover .image-comp-photo:not(:hover) {
     transform: scale(0.95); }
 
+.feature-box {
+  background-color: #e8ebe9;
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .feature-box-icon {
+    height: 25%; }
+  .feature-box-text {
+    color: #7a586d; }
+  .feature-box:last-child {
+    margin: 1rem; }
+
 /* Header */
 .logo {
   position: absolute;
@@ -256,3 +270,8 @@ img.logo {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -25vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(231, 161, 203, 0.8), rgba(122, 88, 109, 0.8)), url(../../img/LOTreeLandscape2.jpeg);
+  background-size: cover; }
